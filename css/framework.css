@@ -1,0 +1,46 @@
+/*  فكرة الفريم وورك انوا توفرعليك وقت وجهد فكتابة والكود والخاصية الي بتكرر الها نفس الخصائص والي هتسخدمها كتير  */
+/* start framework */
+/* start box */
+.d-flex {
+    display: flex;
+}
+.align-center {
+    align-items: center;
+}
+/* S.margin & S.padding */
+.m-20 {
+    margin: 20px;
+}
+.mt-0 {
+    margin-top: 0;
+}
+.p-20 {
+    padding: 20px;
+}
+.p-10 {
+    padding: 10px;
+}
+/*  S.color  */
+.pg-white {
+    background-color: white;
+}
+.c-black{
+    color: black;
+}
+/* S.position */
+.p-relat {
+    position: relative;
+}
+/* S.font */
+.txt-c {
+    text-align: center;
+}
+.fs-14 {
+    font-size: 14px;
+}
+/* S.border */
+.rad-6 {
+    border-radius: 6px;
+}
+
+/* end framework */
