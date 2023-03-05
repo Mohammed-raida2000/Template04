@@ -1,8 +1,12 @@
 /* start var */
 :root {
     --main-transtion: 0.3s;
-    --grey-color:#888;
-    --fa-style-family-classic: "Font Awesome 6 Free";
+    --blue-color: #0075ff;
+    --blue-alt-color: #0d69d5;
+    --orange-color: #f59e0b;
+    --green-color: #22c55e;
+    --red-color: #f44336;
+    --grey-color: #888;    
 }
 
 /* end var */
@@ -108,29 +112,20 @@ ul {
 }
 /* end sidebar */
 /* S.contant */
-
-.page .contant .head {
-    align-items: center;
-    justify-content: space-between;
-
+.contant {
+    overflow: hidden;
 }
-.head .icon img {
-    width: 33px;
-    height: 33px;
-    margin-left: 15px;
-}
-.head .icon i {
-    position: relative;
-}
-.head .icon i::after {
-    content: "";
-    height: 10px;
-    width: 10px;
+.head .search::before {
+    content: "\f002";
+    font-weight: 900;
+    /* found on ./css/all.main.css file */
+    font-family: var(--fa-style-family-classic);
+    transform: translateY(-50%);
+    left: 15px;
     position: absolute;
-    background: red;
-    border-radius: 50%;
-    left: 14px;
-    bottom: 5px;
+    top: 50%;
+    font-size: 14px;
+    color: var(--grey-color);
 }
 .head .search input {
     border-radius: 10px;
@@ -141,19 +136,37 @@ ul {
     font-size: 13px;
     transition: width var(--main-transtion);
 }
-.head .search:hover input {
-    caret-color: black;
-    font-weight: bold;
+.head .search input:focus {
+    width: 200px;    
+
 }
-.head .search::before {
-    content: "\f002";
-    font-weight: 900;
-    font-family: var(--fa-style-family-classic);
-    transform: translateY(-50%);
-    left: 15px;
+.head .search input:focus::placeholder {
+    opacity: 0;
+}
+.head .icon img {
+    width: 33px;
+    height: 33px;
+    margin-left: 15px;
+}
+.head .icon span i {
+    position: relative;
+}
+.head .icon span i::after {
+    content: "";
+    height: 10px;
+    width: 10px;
     position: absolute;
-    top: 50%;
-    font-size: 14px;
-    color: var(--grey-color);
+    background: red;
+    border-radius: 50%;
+    left: 14px;
+    bottom: 5px;
+}
+.head .icon .name {
+    font-size: 10px;
+    font-weight: 900;
+    transform: translateX(-50%);
+    left: 70%;
+    position: absolute;
+    top: 35px;
 }
 /* E.contant */

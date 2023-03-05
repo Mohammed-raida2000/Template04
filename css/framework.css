@@ -50,4 +50,11 @@
 .w-full {
     width: 100%;
 }
+/* s.component */
+.between-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
 /* end framework */
