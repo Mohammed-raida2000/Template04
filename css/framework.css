@@ -4,57 +4,136 @@
 .d-flex {
     display: flex;
 }
+
+.d-grid {
+    display: grid;
+}
+.d-block {
+    display: block;
+}
+/* you  can collecting all proparetis on mobile media quairy with no problem<>this`s opinion*/
+@media(max-width:767px) {
+    .d-block-mobile {
+        display: block;
+    }
+    .hiden-mobile {
+        display: none;
+    }
+    .txt-c-mobile {
+        text-align: center;
+}
+}
+.gap {
+    gap: 20px;
+}
 .align-center {
     align-items: center;
 }
+.j-content {
+    justify-content: space-evenly;
+}
 /* S.margin & S.padding */
+.m-0 {
+    margin: 0;
+}
+
 .m-20 {
     margin: 20px;
 }
+
 .mt-0 {
     margin-top: 0;
+}
+
+.mt-5 {
+    margin-top: 5px;
+}
+.mt-15 {
+    margin-top: 15px;
+}
+.mt-20 {
+    margin-top: 15px;
+}
+.mb-20 {
+    margin-bottom: 15px;
 }
 .p-10 {
     padding: 10px;
 }
+
 .p-15 {
     padding: 20px;
 }
+
 .p-20 {
     padding: 20px;
 }
 
 /*  S.color  */
-.pg-white {
+.bg-white {
     background-color: white;
 }
-.c-black{
+
+.bg-eee {
+    background-color: #eee;
+}
+.bg-blue {
+    background-color: var(--blue-color);
+}
+.bg-alt-bluet {
+    background-color: var(--blue-alt-color);
+}
+.c-black {
     color: black;
 }
+.c-white {
+    color: white;
+}
+.c-gree {
+    color: var(--grey-color);
+}
+
 /* S.position */
 .p-relat {
     position: relative;
 }
+
 /* S.font */
 .txt-c {
     text-align: center;
 }
+
 .fs-14 {
     font-size: 14px;
 }
+
 /* S.border */
 .rad-6 {
     border-radius: 6px;
 }
-/* S.width */
+
+.rad-10 {
+    border-radius: 10px;
+}
+
+/* S.width + height */
 .w-full {
     width: 100%;
+}
+.w-fit {
+    width: fit-content;
+
 }
 /* s.component */
 .between-flex {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
+.buttom-shap {
+    border-radius: 6px;
+    padding: 4px 10px;
+}
+
+
 /* end framework */
