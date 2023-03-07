@@ -269,6 +269,18 @@ ul {
 .wrapper .welcome .click:hover {
     background-color: var(--blue-alt-color);
 }
-
 /* E.wrapper */
+/* start adraft widget */
+.adraft textarea {
+    resize: none;
+}
+.adraft .save {
+    margin-left: auto;
+    cursor: pointer;
+    transition: var(--main-transtion);
+}
+.adraft .save:hover {
+    background-color: var(--blue-alt-color);
+}
+/* end adraft widget */
 /* E.contant */

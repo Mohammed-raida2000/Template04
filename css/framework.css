@@ -8,30 +8,38 @@
 .d-grid {
     display: grid;
 }
+
 .d-block {
     display: block;
 }
+
 /* you  can collecting all proparetis on mobile media quairy with no problem<>this`s opinion*/
 @media(max-width:767px) {
     .d-block-mobile {
         display: block;
     }
+
     .hiden-mobile {
         display: none;
     }
+
     .txt-c-mobile {
         text-align: center;
+    }
 }
-}
+
 .gap {
     gap: 20px;
 }
+
 .align-center {
     align-items: center;
 }
+
 .j-content {
     justify-content: space-evenly;
 }
+
 /* S.margin & S.padding */
 .m-0 {
     margin: 0;
@@ -48,15 +56,31 @@
 .mt-5 {
     margin-top: 5px;
 }
+
 .mt-15 {
     margin-top: 15px;
 }
+
 .mt-20 {
     margin-top: 15px;
 }
+
 .mb-20 {
+    margin-bottom: 20px;
+}
+
+.mb-15 {
     margin-bottom: 15px;
 }
+
+.mb-5 {
+    margin-bottom: 5px;
+}
+
+.mb-5 {
+    margin-bottom: 5px;
+}
+
 .p-10 {
     padding: 10px;
 }
@@ -77,18 +101,23 @@
 .bg-eee {
     background-color: #eee;
 }
+
 .bg-blue {
     background-color: var(--blue-color);
 }
+
 .bg-alt-bluet {
     background-color: var(--blue-alt-color);
 }
+
 .c-black {
     color: black;
 }
+
 .c-white {
     color: white;
 }
+
 .c-gree {
     color: var(--grey-color);
 }
@@ -106,7 +135,9 @@
 .fs-14 {
     font-size: 14px;
 }
-
+.fs-15 {
+    font-size: 14px;
+}
 /* S.border */
 .rad-6 {
     border-radius: 6px;
@@ -116,13 +147,19 @@
     border-radius: 10px;
 }
 
+.bor-no {
+    border: none;
+}
 /* S.width + height */
 .w-full {
     width: 100%;
 }
+
 .w-fit {
     width: fit-content;
-
+}
+.area-height {
+    height: 200px;
 }
 /* s.component */
 .between-flex {
@@ -130,6 +167,7 @@
     align-items: center;
     justify-content: space-between;
 }
+
 .buttom-shap {
     border-radius: 6px;
     padding: 4px 10px;
