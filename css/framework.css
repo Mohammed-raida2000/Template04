@@ -134,6 +134,7 @@
 .bg-alt-blue {
     background-color: var(--blue-alt-color);
 }
+
 .bg-blue {
     background-color: var(--blue-color);
 }
@@ -145,6 +146,7 @@
 .bg-green {
     background-color: var(--green-color);
 }
+
 .c-black {
     color: black;
 }
@@ -168,7 +170,9 @@
 .c-green {
     color: var(--green-color);
 }
-
+.c-red {
+    color: var(--red-color);
+}
 /* S.position */
 .p-relat {
     position: relative;
@@ -178,17 +182,21 @@
 .txt-c {
     text-align: center;
 }
+
 .fs-13 {
     font-size: 13px;
 }
+
 .fs-14 {
     font-size: 14px;
 }
 
 .fs-15 {
-    font-size: 14px;
+    font-size: 15px;
 }
-
+.fs-25 {
+    font-size: 25px;
+}
 .fb-bold {
     font-weight: bold;
 }

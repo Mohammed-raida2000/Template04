@@ -351,4 +351,15 @@ ul {
     border-top-color: var(--green-color);
 }
 /* end Yearly Targets widget */
+/* start Tickets */
+.Tickets {}
+.Tickets .details {
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+}
+.Tickets .box {
+    border: 1px solid #ccc;
+}
+.Tickets  .box i {}
+.Tickets .box span {}
+/* end Tickets */
 /* E.contant */
