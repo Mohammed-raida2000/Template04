@@ -242,17 +242,21 @@ ul {
     margin-left: 20px;
     margin-top: -32px;
 }
+
 @media (max-width:767px) {
     .wrapper .intro {
         padding-bottom: 30px;
     }
+
     .wrapper .avatar {
         margin-left: 0;
     }
-    .wrapper .body >div:not(:last-child) {
+
+    .wrapper .body>div:not(:last-child) {
         margin-bottom: 20px;
     }
 }
+
 .wrapper .body {
     border-top: 1px solid #eee;
     border-bottom: 1px solid #eee;
@@ -266,21 +270,85 @@ ul {
     margin: 0 15px 15px auto;
     transition: var(--main-transtion);
 }
+
 .wrapper .welcome .click:hover {
     background-color: var(--blue-alt-color);
 }
+
 /* E.wrapper */
 /* start adraft widget */
 .adraft textarea {
     resize: none;
 }
+
 .adraft .save {
     margin-left: auto;
     cursor: pointer;
     transition: var(--main-transtion);
 }
+
 .adraft .save:hover {
     background-color: var(--blue-alt-color);
 }
+
 /* end adraft widget */
+/* start Yearly Targets widget */
+.Target .yearly .icon {
+    height: 80px;
+    width: 80px;
+    margin-right: 15px;
+}
+
+.Target .yearly .info .line,
+.Target .box .line>span {
+    height: 4px;
+}
+
+.blue .icon,
+.blue .line {
+    background-color: rgba(0, 117, 255, 0.2);
+}
+
+.orange .icon,
+.orange .line {
+    background-color: rgb(245 158 11 / 20%);
+}
+
+.green .icon,
+.green .line {
+    background-color: rgb(34 197 94 / 20%);
+}
+
+.Target .box .line>span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 4px;
+}
+.Target .box .line>span span {
+    position: absolute;
+    bottom: 16px;
+    right: -16px;
+    padding: 2px 5px;
+}
+.Target .box .line>span span::after {
+    content: "";
+    border-color: transparent;
+    border-width: 5px;
+    border-style: solid;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.Target .blue .line>span span::after{
+    border-top-color: var(--blue-color);
+}
+.Target .orange .line>span span::after{
+    border-top-color: var(--orange-color);
+}
+.Target .green .line>span span::after{
+    border-top-color: var(--green-color);
+}
+/* end Yearly Targets widget */
 /* E.contant */
