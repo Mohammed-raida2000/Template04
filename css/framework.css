@@ -237,7 +237,11 @@
     align-items: center;
     justify-content: space-between;
 }
-
+.end-flex {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
 .flex-center {
     display: flex;
     align-items: center;
