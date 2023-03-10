@@ -325,12 +325,14 @@ ul {
     top: 0;
     height: 4px;
 }
+
 .Target .box .line>span span {
     position: absolute;
     bottom: 16px;
     right: -16px;
     padding: 2px 5px;
 }
+
 .Target .box .line>span span::after {
     content: "";
     border-color: transparent;
@@ -341,37 +343,82 @@ ul {
     left: 50%;
     transform: translateX(-50%);
 }
-.Target .blue .line>span span::after{
+
+.Target .blue .line>span span::after {
     border-top-color: var(--blue-color);
 }
-.Target .orange .line>span span::after{
+
+.Target .orange .line>span span::after {
     border-top-color: var(--orange-color);
 }
-.Target .green .line>span span::after{
+
+.Target .green .line>span span::after {
     border-top-color: var(--green-color);
 }
+
 /* end Yearly Targets widget */
 /* start Tickets */
 .Tickets .details {
-    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 }
+
 .Tickets .box {
     border: 1px solid #ccc;
 }
+
 /* end Tickets */
 /* start New */
 .News .info {
     margin-left: 15px;
 }
+
 .News .info h3 {
     margin: 0 0 6px;
     font-size: 16px;
 }
+
 .News .parts {
     margin-bottom: 20px;
     padding-bottom: 20px;
     border-bottom: 1px solid #eee;
 }
-    
+@media (max-width:767px) {
+    .News , .News .parts {
+        display: block;
+        text-align: center;
+    }
+    .News .info {
+        margin-left: 0;
+        margin-bottom: 15px;
+    }
+    .News .Time {
+        margin: auto;
+    }
+
+}
 /* end New */
+/* start Latest Tasks */
+.Tasks .info:not(:last-of-type) {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+.Tasks .info:nth-of-type(4) {
+    text-decoration: line-through;
+}
+.Tasks .info i:hover {
+    color: var(--red-color);
+    transition: var(--main-transtion);
+}
+/*  end Latest Tasks */
+/* start Uploads */
+.Uploads img {
+    height: 50px;
+}
+.Uploads ul {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+/* end Uploads */
 /* E.contant */
