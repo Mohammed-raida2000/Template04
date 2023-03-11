@@ -382,20 +382,26 @@ ul {
     padding-bottom: 20px;
     border-bottom: 1px solid #eee;
 }
+
 @media (max-width:767px) {
-    .News , .News .parts {
+
+    .News,
+    .News .parts {
         display: block;
         text-align: center;
     }
+
     .News .info {
         margin-left: 0;
         margin-bottom: 15px;
     }
+
     .News .Time {
         margin: auto;
     }
 
 }
+
 /* end New */
 /* start Latest Tasks */
 .Tasks .info:not(:last-of-type) {
@@ -403,22 +409,82 @@ ul {
     padding-bottom: 15px;
     border-bottom: 1px solid #eee;
 }
+
 .Tasks .info:nth-of-type(4) {
     text-decoration: line-through;
 }
+
 .Tasks .info i:hover {
     color: var(--red-color);
     transition: var(--main-transtion);
 }
+
 /*  end Latest Tasks */
 /* start Uploads */
 .Uploads img {
     height: 50px;
 }
+
 .Uploads ul {
     margin-bottom: 15px;
     padding-bottom: 15px;
     border-bottom: 1px solid #eee;
 }
+
 /* end Uploads */
+/* start Project */
+.Project ul::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    background-color: var(--blue-color);
+    left: 11px;
+}
+
+.Project ul li::before {
+    content: "";
+    height: 20px;
+    width: 20px;
+    display: block;
+    border: 2px solid white;
+    outline: 2px solid var(--blue-alt-color);
+    background-color: white;
+    z-index: 2;
+    margin-right: 15px;
+}
+
+.Project ul li.current::before {
+    animation: puls 2s infinite alternate;
+}
+
+.Project .done::before {
+    content: "";
+    background-color: var(--blue-color);
+}
+
+.Project img {
+    height: 160px;
+    right: 0;
+    position: absolute;
+    opacity: 0.4;
+    bottom: 0;
+}
+
+/* start anmations */
+@keyframes puls {
+
+    0%,
+    50% {
+        background-color: var(--blue-color);
+        transform: rotateZ(-360deg);
+        border-radius: 50%;
+    }
+    100% {
+        background-color: white;
+    }
+}
+
+/* end anmations */
+/* end Project  */
 /* E.contant */

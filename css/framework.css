@@ -71,9 +71,11 @@
 }
 
 .mt-20 {
-    margin-top: 15px;
+    margin-top: 20px;
 }
-
+.mt-25 {
+    margin-top: 25px;
+}
 .mr-15 {
     margin-right: 15px;
 }
