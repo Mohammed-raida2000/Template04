@@ -469,6 +469,7 @@ ul {
     position: absolute;
     opacity: 0.4;
     bottom: 0;
+    animation: moveimge-top 1.5s infinite alternate ;
 }
 
 /* start anmations */
@@ -476,7 +477,7 @@ ul {
 
     0%,
     50% {
-        background-color: var(--blue-color);
+        background-color: var(--blue-alt-color);
         transform: rotateZ(-360deg);
         border-radius: 50%;
     }
@@ -485,6 +486,40 @@ ul {
     }
 }
 
+@keyframes moveimge-top {
+    0%,
+    50% {
+        opacity: 0.9;
+        transform: rotateY(-180deg);
+        bottom: 100px; 
+    }
+    100% {
+        opacity: 0.4;
+    }
+}
 /* end anmations */
 /* end Project  */
+/* starts Reminder */
+.Remindes .object {
+    display: block;
+    height: 15px;
+    width: 15px;
+    margin-right: 10px;
+}
+.Remindes ul li .blue {
+    border-left: 2px solid var(--blue-color);
+}
+.Remindes ul li .green {
+    border-left: 2px solid var(--green-color);
+}
+.Remindes ul li .orange {
+    border-left: 2px solid var(--orange-color);
+}
+.Remindes ul li .red {
+    border-left: 2px solid var(--red-color);
+}
+.Remindes .info {
+    border-left: 2px solid;
+}
+/* ennd Reminder */
 /* E.contant */
