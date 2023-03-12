@@ -604,4 +604,42 @@ ul {
 }
 
 /* end social */
+/* s.table proj */
+.Projects table {
+    border-spacing: 0;
+    min-width: 1000px;
+    
+}
+.Projects .table {
+    overflow-x: auto;
+}
+.Projects thead td {
+    background-color: #eee;
+    font-weight: bold;
+    
+}
+.Projects table td {
+    padding: 15px;
+}
+.Projects tbody td img {
+    height: 32px;
+    border-radius: 50%;
+    padding: 2px;
+    background-color: white;
+}
+.Projects tbody td img:not(:first-of-type) {
+    margin-left: -20px;
+}
+.Projects tbody tr {
+    background-color: white;
+}
+.Projects tbody td {
+    border-bottom: 1px solid #eee;
+    border-left: 1px solid #eee;
+    transition: 0.3s;
+}
+.Projects tbody tr:hover td {
+    background-color: #faf7f7;
+}
+/* end table */
 /* E.contant */
