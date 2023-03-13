@@ -45,6 +45,7 @@ ul {
 ::-webkit-scrollbar-track {
     background-color: #0075ff;
 }
+
 /* start toggle checkbox */
 .toggle-checkbox {
     -webkit-appearance: none;
@@ -723,13 +724,30 @@ ul {
         gap: 10px;
     }
 }
+
 .setting textarea {
     border: 1px solid #ccc;
     resize: none;
     min-height: 150px;
 }
+
 .setting textarea::placeholder {
     color: var(--grey-color);
 }
+
 /* end setting page */
+/* s .information */
+.info .email {
+    width: calc(100% - 80px);
+    display: inline-flex;
+}
+
+.info :disabled {
+    background-color: #f0f4f8;
+    color: #bbb;
+    cursor: help;
+
+}
+
+/* e .information */
 /* E.contant */
