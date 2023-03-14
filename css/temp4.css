@@ -736,7 +736,6 @@ ul {
 }
 
 /* end setting page */
-/* s .information */
 .info .email {
     width: calc(100% - 80px);
     display: inline-flex;
@@ -746,8 +745,138 @@ ul {
     background-color: #f0f4f8;
     color: #bbb;
     cursor: help;
+}
+
+.security .sec-box:not(:last-of-type) {
+    border-bottom: 1px solid #eee;
+}
+
+.social i {
+    display: flex;
+    height: 40px;
+    width: 40px;
+    border: 1px solid #ccc;
+    border-radius: 6px 0 0 6px;
+}
+
+
+.social input {
+    height: 40px;
+    border-left: none;
+    padding: 10px;
+    background: #eee;
+    border-radius: 0 6px 6px 0;
+}
+
+.widgets-control .box label {
+    padding-left: 30px;
+    cursor: pointer;
+    position: relative;
+}
+
+.widgets-control input {
+    appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+}
+
+.widgets-control label::before,
+.widgets-control label::after {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -9px;
+    border-radius: 4px;
 
 }
 
-/* e .information */
+.widgets-control label::before {
+    content: "";
+    height: 14px;
+    width: 14px;
+    position: absolute;
+    border: 2px solid var(--grey-color);
+}
+.widgets-control label::after {
+    font-family: var(--fa-style-family-classic);
+    content: "\f00c";
+    font-weight: 900;
+    font-size: 12px;
+    background: var(--blue-color);
+    color: white;
+    height: 18px;
+    width: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0) rotate(360deg);
+    transition: var(--main-transtion);
+}
+.widgets-control  input:checked+ label::after {
+    transform: scale(1) rotate(-360deg);
+}
+.Backups input {
+    appearance: none;
+    -webkit-appearance: none;
+    
+}
+.Backups .box label {
+    padding-left: 30px;
+    cursor: pointer;
+}
+.Backups .box label::before ,
+.Backups .box label::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -9px;
+    border-radius: 50%;
+
+}
+.Backups .box label::before {
+    content: "";
+    height:20px;
+    width: 20px;
+    position: absolute;
+    border: 2px solid var(--blue-color);
+}
+.Backups .box label::after {
+    content: "";
+    background: var(--blue-color);
+    height: 11px;
+    width: 12px;
+    left: 5px;
+    top: 50%;
+    transform: translateY(50%);
+    transition: 0.3s;
+    transform: scale(0);
+}
+.Backups .box input:checked+ label::after {
+    transform: scale(1);
+}
+.servies {
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+@media (max-width: 767px) {
+    .servies {
+    flex-wrap: wrap;
+}
+}
+.servies .server {
+    border: 2px solid #eee;
+    position: relative;
+}
+.servies label {
+    cursor: pointer;
+ }
+.servies .main i {
+    display: block;
+ }
+.Backups .servies input:checked + .server {
+    border-color: var(--blue-color);
+    color: var(--blue-alt-color);
+
+ }
 /* E.contant */
