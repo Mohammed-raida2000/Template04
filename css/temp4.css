@@ -511,7 +511,7 @@ ul {
     background-color: var(--blue-color);
 }
 
-.Project img {
+.Project .move-pic {
     height: 160px;
     right: 0;
     position: absolute;
@@ -868,29 +868,34 @@ ul {
 /* s start Profile page */
 /* end start Profile page */
 @media (max-width:767px) {
-    .overview  {
+    .overview {
         flex-direction: column;
     }
 }
+
 .overview .avatar {
     width: 300px;
 }
+
 @media (min-width:768px) {
     .overview .avatar {
         border-right: 1px solid #eee;
     }
 }
-.overview .avatar > img {
+
+.overview .avatar>img {
     height: 130px;
     width: 130px;
 }
+
 .overview .avatar .progress {
     height: 6px;
     width: 100%;
     border-radius: 3px;
     position: relative
 }
-.overview .avatar .progress > span {
+
+.overview .avatar .progress>span {
     background-color: var(--blue-color);
     height: 100%;
     position: absolute;
@@ -898,59 +903,133 @@ ul {
     top: 0;
     border-radius: 3px;
 }
+
 .Profile .info {
     flex-wrap: wrap;
 }
+
 @media (max-width:767px) {
     .Profile .info {
         text-align: center;
     }
 }
+
 .Profile .info .box {
     flex-wrap: wrap;
     border-bottom: 1px solid #eee;
 }
-.Profile .info .box > h4 {
+
+.Profile .info .box>h4 {
     font-weight: normal;
 }
 
-.Profile .info .box >div {
+@media (max-width:767px) {
+    .Profile .data {
+        flex-direction: column;
+    }
+}
+
+.Profile .info .box>div {
     min-width: 250px;
     padding: 10px 0 0;
 }
+
 .Profile .info .toggle-switch {
     height: 20px;
 }
+
 .Profile .info .toggle-switch::before {
     height: 12px;
     width: 12px;
     font-size: 8px;
 }
+
 .Profile .toggle-checkbox:checked+.toggle-switch::before {
     left: 62px;
 }
+
 /* s skills and activities */
 .Profile .data .box {
     border-bottom: 1px solid #eee;
 }
+
+@media (max-width:767px) {
+    .Profile .skill .all-box .box {
+        justify-content: center;
+    }
+}
+
 @media (min-width:768px) {
     .Profile .box .date {
         text-align: right;
-        /* margin-right: auto; */
+        margin-right: auto;
     }
 }
+
 .Profile .data .Activities:not(:last-of-type) {
     border-bottom: 1px solid #eee;
     padding-bottom: 20px;
     margin-bottom: 20px;
 }
+
+@media (max-width:767px) {
+    .Profile .Activities .all-box .box {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .Profile .Activities img {
+        margin-bottom: 10px;
+        margin-right: 0px;
+    }
+
+    .Profile .Activities .box .date {
+        margin-left: 0;
+        margin-top: 30px;
+    }
+}
+
 .Profile .data .Activities img {
     height: 75px;
-
 }
+
 /* e kills and activities */
+/* end end profile page */
 
 /* end profile page */
+.contant .Projects span {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.contant .Projects {
+    grid-template-columns: minmax(200px, 1fr);
+    margin-left: 10px;
+    margin-right: 10px;
+    gap: 10px;
+}
+.contant .Projects h4 {
+    font-weight: normal;
+}
+.contant .Projects .picture {
+    position: relative;
+    min-height: 80px;
+}
+.contant .Projects .picture a {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    
+}
+.contant .Projects .picture img {
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+/* end project page */
+
 /* start anmations */
 @keyframes puls {
 
