@@ -928,8 +928,28 @@ ul {
 }
 .Profile .toggle-checkbox:checked+.toggle-switch::before {
     left: 62px;
+}
+/* s skills and activities */
+.Profile .data .box {
+    border-bottom: 1px solid #eee;
+}
+@media (min-width:768px) {
+    .Profile .box .date {
+        text-align: right;
+        /* margin-right: auto; */
+    }
+}
+.Profile .data .Activities:not(:last-of-type) {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.Profile .data .Activities img {
+    height: 75px;
 
 }
+/* e kills and activities */
+
 /* end profile page */
 /* start anmations */
 @keyframes puls {
