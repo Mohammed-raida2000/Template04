@@ -61,6 +61,7 @@ ul {
     background-color: #ccc;
     border-radius: 16px;
     cursor: pointer;
+    margin: auto;
 }
 
 .toggle-switch::before {
@@ -519,36 +520,6 @@ ul {
     animation: moveimge-top 1.5s infinite alternate;
 }
 
-/* start anmations */
-@keyframes puls {
-
-    0%,
-    50% {
-        background-color: var(--blue-alt-color);
-        transform: rotateZ(-360deg);
-        border-radius: 50%;
-    }
-
-    100% {
-        background-color: white;
-    }
-}
-
-@keyframes moveimge-top {
-
-    0%,
-    50% {
-        opacity: 0.9;
-        transform: rotateY(-180deg);
-        bottom: 100px;
-    }
-
-    100% {
-        opacity: 0.4;
-    }
-}
-
-/* end anmations */
 /* end Project  */
 /* starts Reminder */
 .Remindes .object {
@@ -797,6 +768,7 @@ ul {
     position: absolute;
     border: 2px solid var(--grey-color);
 }
+
 .widgets-control label::after {
     font-family: var(--fa-style-family-classic);
     content: "\f00c";
@@ -812,19 +784,23 @@ ul {
     transform: scale(0) rotate(360deg);
     transition: var(--main-transtion);
 }
-.widgets-control  input:checked+ label::after {
+
+.widgets-control input:checked+label::after {
     transform: scale(1) rotate(-360deg);
 }
-.Backups input {
+
+.Backups input[type="radio"] {
     appearance: none;
     -webkit-appearance: none;
-    
+
 }
+
 .Backups .box label {
     padding-left: 30px;
     cursor: pointer;
 }
-.Backups .box label::before ,
+
+.Backups .box label::before,
 .Backups .box label::after {
     content: "";
     position: absolute;
@@ -834,13 +810,15 @@ ul {
     border-radius: 50%;
 
 }
+
 .Backups .box label::before {
     content: "";
-    height:20px;
+    height: 20px;
     width: 20px;
     position: absolute;
     border: 2px solid var(--blue-color);
 }
+
 .Backups .box label::after {
     content: "";
     background: var(--blue-color);
@@ -852,31 +830,134 @@ ul {
     transition: 0.3s;
     transform: scale(0);
 }
-.Backups .box input:checked+ label::after {
+
+.Backups .box input[type="radio"]:checked+label::after {
     transform: scale(1);
 }
+
 .servies {
     border-top: 1px solid #eee;
     padding-top: 20px;
 }
+
 @media (max-width: 767px) {
     .servies {
-    flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
 }
-}
+
 .servies .server {
     border: 2px solid #eee;
     position: relative;
 }
+
 .servies label {
     cursor: pointer;
- }
+}
+
 .servies .main i {
     display: block;
- }
-.Backups .servies input:checked + .server {
+}
+
+.Backups .servies input[type="radio"]:checked+.server {
     border-color: var(--blue-color);
     color: var(--blue-alt-color);
+}
 
- }
 /* E.contant */
+/* s start Profile page */
+/* end start Profile page */
+@media (max-width:767px) {
+    .overview  {
+        flex-direction: column;
+    }
+}
+.overview .avatar {
+    width: 300px;
+}
+@media (min-width:768px) {
+    .overview .avatar {
+        border-right: 1px solid #eee;
+    }
+}
+.overview .avatar > img {
+    height: 130px;
+    width: 130px;
+}
+.overview .avatar .progress {
+    height: 6px;
+    width: 100%;
+    border-radius: 3px;
+    position: relative
+}
+.overview .avatar .progress > span {
+    background-color: var(--blue-color);
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 3px;
+}
+.Profile .info {
+    flex-wrap: wrap;
+}
+@media (max-width:767px) {
+    .Profile .info {
+        text-align: center;
+    }
+}
+.Profile .info .box {
+    flex-wrap: wrap;
+    border-bottom: 1px solid #eee;
+}
+.Profile .info .box > h4 {
+    font-weight: normal;
+}
+
+.Profile .info .box >div {
+    min-width: 250px;
+    padding: 10px 0 0;
+}
+.Profile .info .toggle-switch {
+    height: 20px;
+}
+.Profile .info .toggle-switch::before {
+    height: 12px;
+    width: 12px;
+    font-size: 8px;
+}
+.Profile .toggle-checkbox:checked+.toggle-switch::before {
+    left: 62px;
+
+}
+/* end profile page */
+/* start anmations */
+@keyframes puls {
+
+    0%,
+    50% {
+        background-color: var(--blue-alt-color);
+        transform: rotateZ(-360deg);
+        border-radius: 50%;
+    }
+
+    100% {
+        background-color: white;
+    }
+}
+
+@keyframes moveimge-top {
+
+    0%,
+    50% {
+        opacity: 0.9;
+        transform: rotateY(-180deg);
+        bottom: 100px;
+    }
+
+    100% {
+        opacity: 0.4;
+    }
+}
+
+/* end anmations */
