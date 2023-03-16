@@ -270,8 +270,11 @@
     border: none;
 }
 
-.border-fram {
-    border: 1px solid #ccc;
+.border-top {
+    border-top: 1px solid #ccc;
+}
+.border-bott {
+    border-top: 1px solid #ccc;
 }
 
 /* S.width + height */

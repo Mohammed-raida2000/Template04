@@ -1137,6 +1137,60 @@ ul {
     font-size: 13px;
 }
 /* end  course page */
+/*  start Friends page */
+
+.friends {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+@media (max-width:767px) {
+    .friends {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        margin-left: 10px;
+        margin-right: 10px;
+        gap: 10px;
+    }
+}
+.friends .box .content {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+.friends .box .content i {
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.friends .box .content i:hover {
+    background-color: var(--blue-color);
+    color: white;
+}
+.friends .box .emoge {
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.friends .box .emoge > span {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    FONT-SIZE: 40PX;
+    opacity: 0.2;
+}
+.friends .box .personal img {
+    height: 80px;
+    width: 80px;
+    border-radius: 40px;
+
+}
+/*  end Friends page */
 /* start anmations */
 @keyframes puls {
 
