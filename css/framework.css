@@ -227,7 +227,9 @@
 .p-relat {
     position: relative;
 }
-
+.p-absolute {
+    position: absolute;
+}
 /* S.font */
 .txt-c {
     text-align: center;
@@ -268,6 +270,9 @@
 
 .bor-no {
     border: none;
+}
+.border-fram {
+    border: 1px solid #eee;
 }
 
 .border-top {
