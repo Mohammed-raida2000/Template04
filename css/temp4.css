@@ -1284,6 +1284,48 @@ ul {
 }
 
 /* end file page */
+/* start Plans page */
+.Plans .free {
+    border: 3px solid white;
+    /* outline: 3px solid var(--green-color); */
+}
+.Plans  .green {
+    outline: 3px solid var(--green-color);
+}
+.Plans .blue{
+    outline: 3px solid var(--blue-color);
+}
+.Plans .orange {
+    outline: 3px solid var(--orange-color);
+}
+.Plans .free div  {
+    font-size: 40px;
+    width: fit-content;
+    margin: auto;
+    position: relative;
+}
+.Plans .free span {
+    font-size: 20px;
+    position: absolute;
+    top: 0;
+    left: -20px;
+}
+.Plans .plan li {
+    border-bottom: 2px solid #eee;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+.Plans .plan ul i:first-of-type {
+    font-size: 18px;
+    margin-right: 5px;
+}
+.Plans .plan ul i:last-of-type {
+    color: var(--grey-color);
+    cursor: pointer;
+    margin-left: auto;
+}
+/* end Plans page */
 /* start anmations */
 @keyframes puls {
 
