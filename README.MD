@@ -6,6 +6,11 @@
 
 ## Screenshots
 ![](https://github.com/Mohammed-raida2000/Template04/blob/main/image/Screenshot%202023-03-17%20233435.png)
+### Lighthose preformance webpage
+![](https://github.com/Mohammed-raida2000/Template04/blob/main/image/image.png)
+
+### Lighthose preformance webpage
+![](https://github.com/Mohammed-raida2000/Template04/blob/main/image/image.png)
 
 ## Links
 * Live Site URL:[Elzero Dashboard](https://elzerowebschool.github.io/HTML_And_CSS_Template_Four/index.html)
